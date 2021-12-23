@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://jmix.io/schema/ui/menu">
+
+    <menu id="application" caption="msg://de.diedavids.jmix.softreference.example/menu.application" insertBefore="administration">
+        <item screen="Document.browse"
+              caption="msg://de.diedavids.jmix.softreference.example.screen.document/documentBrowse.menu"/>
+        <item screen="Customer.browse"
+              caption="msg://de.diedavids.jmix.softreference.example.screen.customer/customerBrowse.menu"/>
+        <item screen="Order_.browse" caption="msg://de.diedavids.jmix.softreference.example.screen.order/orderBrowse.menu"/>
+    </menu>
+
+</menu-config>
