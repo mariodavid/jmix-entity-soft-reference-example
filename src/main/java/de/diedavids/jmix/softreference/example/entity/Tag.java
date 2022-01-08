@@ -6,14 +6,17 @@ import io.jmix.core.metamodel.annotation.JmixEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.util.UUID;
 
 @JmixEntity
-@Table(name = "CUSTOMER")
+@Table(name = "TAG")
 @Entity
-public class Customer implements SupportsDocumentReference {
+public class Tag {
     @JmixGeneratedValue
     @Column(name = "ID", nullable = false)
     @Id
@@ -22,6 +25,17 @@ public class Customer implements SupportsDocumentReference {
     @InstanceName
     @Column(name = "NAME")
     private String name;
+    @JoinColumn(name = "DOCUMENT_ID", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    private Document document;
+
+    public Document getDocument() {
+        return document;
+    }
+
+    public void setDocument(Document document) {
+        this.document = document;
+    }
 
     public String getName() {
         return name;
