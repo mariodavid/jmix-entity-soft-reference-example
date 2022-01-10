@@ -2,30 +2,13 @@
 <project version="4">
   <component name="JmixDataStoreSettingsManager">
     <moduleSettings>
-      <entry key="de.diedavids.jmix.softreference.example.main">
-        <ModuleSettings>
-          <option name="dataStoreOptions">
-            <map>
-              <entry key="main">
-                <value>
-                  <DataStoreSettings />
-                </value>
-              </entry>
-            </map>
-          </option>
-        </ModuleSettings>
-      </entry>
       <entry key="softreference-example.main">
         <ModuleSettings>
           <option name="dataStoreOptions">
             <map>
               <entry key="main">
                 <value>
-                  <DataStoreSettings>
-                    <option name="supportedTypes">
-                      <option value="hsql" />
-                    </option>
-                  </DataStoreSettings>
+                  <DataStoreSettings />
                 </value>
               </entry>
             </map>
